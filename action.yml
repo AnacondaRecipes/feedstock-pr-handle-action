@@ -1,0 +1,12 @@
+name: 'Pull Request Handle Action'
+description: 'A GitHub action to create/trigger a companion PR in a parent repository'
+author: 'dbast'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'activity'
+  color: 'orange'
+outputs:
+  pull_request_url:
+    description: 'The URL of the created/triggered PR'
